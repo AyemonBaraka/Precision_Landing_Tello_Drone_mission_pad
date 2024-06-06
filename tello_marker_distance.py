@@ -1,3 +1,6 @@
+### Author: Ayemon Baraka
+
+
 import cv2
 import numpy as np
 from djitellopy import Tello
@@ -10,7 +13,7 @@ import math
 TARGET_DISTANCE = 40  # Target distance from the ArUco marker in cm
 SPEED = 20  # Movement speed
 MARKER_SIZE = 12  # Size of the ArUco marker in cm
-MAX_SPEED = 25
+MAX_SPEED = 25  #Maaximum Speed of tello drone
 MIN_DISTANCE = 50
 
 TOLERANCE_X_AXIS = 5
@@ -40,7 +43,7 @@ cap = tello.get_frame_read()
 time.sleep(2)
 
 
-
+##This idea is taken from https://github.com/sislam14/DJITello
 '''
 This function tries to postion the drone near the current mission pad
 @param tolerance_x    : This is absolute tolerance for mission pad X axis
