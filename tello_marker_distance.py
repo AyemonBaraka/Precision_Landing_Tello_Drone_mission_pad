@@ -15,13 +15,10 @@ SPEED = 20  # Movement speed
 MARKER_SIZE = 12  # Size of the ArUco marker in cm
 MAX_SPEED = 25  #Maaximum Speed of tello drone
 MIN_DISTANCE = 50
-
 TOLERANCE_X_AXIS = 5
 TOLERANCE_Y_AXIS = 5
 POSITIONING_ITERATION_COUNT = 5
-
 DEFAULT_TELLO_SPEED = 25
-
 MARKER_DETECTED = True
 
 ## aruco x for left right
@@ -43,7 +40,7 @@ cap = tello.get_frame_read()
 time.sleep(2)
 
 
-##This idea is taken from https://github.com/sislam14/DJITello
+##This idea of tello_position_near_mpad is taken from https://github.com/sislam14/DJITello
 '''
 This function tries to postion the drone near the current mission pad
 @param tolerance_x    : This is absolute tolerance for mission pad X axis
@@ -52,7 +49,6 @@ This function tries to postion the drone near the current mission pad
 @param iteration_count: This is number of iteration that the function will try to
                         position the drone near mission pad within tolerance
 '''
-
 def tello_position_near_mpad(tolerance_x, tolerance_y,mpad_id, iteration_count):
     y_min = 0-tolerance_y
     y_max = tolerance_y
