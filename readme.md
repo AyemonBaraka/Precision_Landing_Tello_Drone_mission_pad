@@ -31,9 +31,7 @@ We are using python programming in this project.
 
 
 
-# Demo_link: 
-
-https://youtu.be/Rj6Cnfliyjw
+# Demo_link:  https://youtu.be/Rj6Cnfliyjw
 
 ![image](https://github.com/user-attachments/assets/b0cb9fb1-6078-4417-94d7-df53dab2a9f0)
 
